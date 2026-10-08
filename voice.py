@@ -17,7 +17,7 @@ def speak(text):
 with speech_recognition.Microphone() as mic:
     recognizer.adjust_for_ambient_noise(mic, duration=0.2)
 
-    speak("Hello! Welcome to Sayan's Voice Assistant")
+    speak("Hello! Welcome to Arijit Voice Assistant")
 
     while True:
         try:
@@ -38,7 +38,7 @@ with speech_recognition.Microphone() as mic:
                 response = "Today's date is " + today.strftime("%d-%m-%Y")
 
             elif text == "hello":
-                response = "Welcome to Sayan's Voice Assistant"
+                response = "Welcome to Arijit Voice Assistant"
 
             elif text == "open google":
                 webbrowser.open("https://www.google.com")
